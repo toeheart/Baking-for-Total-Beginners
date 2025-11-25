@@ -1,0 +1,396 @@
+/* === global styles === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7ef;
+  box-sizing: border-box;
+  color: #2e2e2e;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+/* === navigations === */
+nav {
+  background-color: #f3b4c8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 500;
+}
+
+/* === header/hero styles === */
+header {
+  background-color: #d8f3dc;
+  padding: 15px 0;
+  margin: 20px auto;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* === homepage styles === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  min-width: 200px;
+  flex: 1;
+  text-align: center;
+  transition: all 0.8s ease;
+}
+
+.hero-text p {
+  flex: 1;
+  line-height: 1.9;
+  max-width: 500px;
+}
+
+.homeimage img {
+  width: 370px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+header .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  color: #2d6a4f;
+}
+
+.intro ul {
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.intro li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.aboutus-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.aboutus-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+section h2 {
+  border-bottom: 3px solid #57cc99;
+  padding-bottom: 5px;
+  color: #2d6a4f;
+  margin: 30px 0 20px 0;
+}
+
+section {
+  margin: 0 20px 40px;
+}
+
+.highlight-container {
+margin: 40px 20px;
+display:grid;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  border-radius: 15px;
+  padding: 25px;
+  margin: 10px auto;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-content h3 {
+  color: #2d6a4f;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.card-content .btn {
+  transition: all 0.3s ease;
+}
+
+.btn {
+  display: inline-block;
+  background: #429e76;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #2d6e52;
+}
+
+/* === tools page styles === */
+.tools-content {  
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.tools-text {
+  flex: 1;
+  line-height:1.6;
+}
+
+.tools-content img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.tools-top ul {
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.tools-top li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* === ingredients page styles === */
+.ingredients-list {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.list {
+background-color: #e7f5e9;
+padding: 25px;
+border-radius: 10px;
+border-left: 5px solid #57cc99;
+margin: 30px;
+}
+
+.list h3 {
+  color: #2d6a47;
+  margin-bottom: 15px;
+}
+
+.list img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* === tips page styles === */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin: 70px 0;
+}
+
+.tips-list {
+  background: #d8f3dc;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-top: 5px solid #5aa484;
+}
+
+.tips-numbers {
+  background: #57cc99;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 15px;
+}
+
+.tips-list h3 {
+  color: #2d6a47;
+  margin-bottom: 10px;
+}
+
+/* === recipe page styles === */
+.title-recipe img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.recipe-notes h3 {
+font-size: 16px;
+}
+
+.recipe-notes li {
+font-size: 14px ;
+line-height: 1.4;
+}
+
+/* === footer styles === */
+footer {
+  text-align: center;
+  background-color: #f3b4c8;
+  padding: 10px;
+  color: #2e2e2e;
+  margin-top: auto;
+}
+
+/* === external link style === */
+ .external-link {
+    color: #2d6a47;
+    text-decoration: underline;
+  }
+
+  .external-link:hover {
+    color: #429e76;
+  }
+
+/* === mobile responsive styles === */
+@media (max-width: 768px) {
+  .logo {
+  text-align: center;
+  width: 100%;
+  }
+
+/* === navigation styles for media === */
+  nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* === homepage styles === */
+.homeimage img {
+  width: 330px;
+  height: auto;
+}
+  .aboutus-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.highlight-container {
+  margin-bottom: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.highlight-container h2 {
+  text-align: center;
+}
+
+/* === tools page styles for media === */
+.tools-content {
+  flex-direction: column;
+}
+
+.tools-content img {
+order: 2;
+margin-top: 20px;
+width: 300px;
+height: auto;
+}
+
+.tools-text {
+order: 2;
+}
+
+/* === ingredients page styles for media === */
+.ingredients-list {
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding: 10px;
+  margin: 0.2px;
+}
+
+.list img {
+  width: 200px;
+  height: auto;
+}
+
+/* === tips page styles for media === */
+.tips-grid {
+  grid-template-columns: 1fr;
+}
+
+/* === recipe page styles for media === */
+.title-recipe img {
+  width: 300px;
+  height: auto;
+}
+}
